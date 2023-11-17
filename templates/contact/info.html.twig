@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}MyAgenda - Informations{% endblock %}
+{% block body %}
+<section class="py-5 container">
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"> Nom | {{ contact.nom | upper}}</li>
+    <li class="list-group-item"> Prénom | {{ contact.prenom | upper}}</li>
+    <li class="list-group-item">Email | {{ contact.email }}</li>
+    <li class="list-group-item">Téléphone | {{ contact.telephone }}</li>
+  </ul>
+</div>
+</section>
+
+{% endblock %}
